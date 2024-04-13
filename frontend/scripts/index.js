@@ -42,6 +42,7 @@ window.addEventListener('scroll', () => {
 
     setTimeout(() => {
       PAGE++;
+      console.log('Loading more!')
       showPets();
     }, 500);
   }
