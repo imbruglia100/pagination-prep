@@ -6,9 +6,8 @@ const e = require("express");
 router.get('/', async (req, res, next) => {
     const { page, size } = req.query
 
-    let p = page || 1
-    let s = size || 5
-
+    let p = +page || 1
+    let s = +size || 5
 
     let offset = s * (p - 1);
     let limit = s;
